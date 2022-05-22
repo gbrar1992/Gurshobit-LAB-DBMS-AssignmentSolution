@@ -213,7 +213,7 @@ FROM
     `buyosmly`.`order` AS o
 WHERE
         o.ord_amount >= 3000
-GROUP BY gender
+GROUP BY gender;
 
 -- Output
 -- M -> 2
@@ -237,7 +237,7 @@ SELECT
 FROM
     `buyosmly`.`order` AS o
 WHERE
-        o.cus_id = 2
+        o.cus_id = 2;
 
 -- Output
 -- ord_id, ord_amount, ord_date, cus_id, pricing_id, product
@@ -257,7 +257,7 @@ SELECT
              sp.supp_id = s.supp_id) AS products
 FROM
     `buyosmly`.`supplier` AS s
-HAVING products > 1
+HAVING products > 1;
 
 -- Output
 -- supp_id, supp_name, supp_city, supp_phone, products
@@ -301,7 +301,7 @@ SELECT
 FROM
     `buyosmly`.`supplier_pricing` AS sp
 GROUP BY category
-order by cat_id ASC
+order by cat_id ASC;
 
 -- Output
 -- cat_id cat_name, product, product_price
@@ -336,7 +336,7 @@ SELECT
 FROM
     `buyosmly`.`order` AS o
 WHERE
-    date(o.ord_date) > '2021-10-05'
+    date(o.ord_date) > '2021-10-05';
 
 -- Output
 -- pro_id, product
