@@ -1,5 +1,5 @@
 -- Buyosmly E-Commerce Database
-CREATE DATABASE buyosmly;
+CREATE DATABASE buyosmly DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 -- Use Created Database
 use buyosmly;
 
